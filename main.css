@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.head{
+    padding: 1px 100px;
+    background-color: #4c4d5f;
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    z-index: 10000;
+    position: sticky;
+    top: 0px;
+}
+.img_logo img{
+    width: 130px;
+    height: 90px;
+    object-fit: contain;
+}
+.dropdown-content{
+    text-align: center;
+}
+.dropdown-content ul{
+    list-style: none;
+    display: inline-flex;
+    color: white;
+} 
+.dropdown-content ul li{
+    width: 120px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.dropdown-content ul li a{
+    text-decoration: none;
+    color: white;
+}
+.dropdown-content ul li ion-icon{
+    position: absolute;
+    font-size: 18px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.dropdown-content ul li:hover{
+    cursor: pointer;
+    border-radius: 3px;
+}
+.sub-menu-1{
+    display: none;
+}
+.dropdown-content ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: #4c4d5f;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.dropdown-content ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown-content ul li:hover .sub-menu-1 ul li{
+    width: 230px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.dropdown-content ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.dropdown-content ul li:hover .sub-menu-1 ul li a:hover{
+    color: #00b289;
+}
+.buttons{
+    padding: 30px 30px;
+}
+.buttons a{
+    border-radius: 5px;
+    font-weight: 700;
+    margin-right: 20px;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #00b289;
+    color: #00b289;
+}
+.buttons a:hover{
+    color: white;
+    background-color: #00b289;
+}
+.buttons .active-1{
+    background-color: #00b289;
+    color: white;
+    opacity: 0.9;
+}
+.buttons .active-1:hover{
+    opacity: 1;
+}
+.sub-menu-1 ul li p{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: 500;
+}
+.sub-menu-1 ul li ion-icon {
+    position: absolute;
+    margin-left: -22px;
+    font-size: 18px;
+}
+.sub-menu-1 ul li ion-icon:last-child{
+    position: absolute;
+    margin-left: 30px;
+    float: right;
+}
+section{
+    overflow: auto;
+    background-color: white;
+}
+.plan h2{
+    display: inline-block;
+    padding: 0px 10px;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 40px;
+    color: #4c4d5f;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+.switch input{display: none;}
+
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+.monthly{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #222222;
+    padding-top: 10px;
+}
+.slider{
+    background-color: #00b289;
+}
+.contain{
+    display: flex;
+    padding: 200px 450px 30px;
+}
+.yearly{
+    display: inline-block;
+    margin-left: 20px;
+    color: #333333;
+    padding-top: 10px;
+}
+.row{
+    padding: 0px 50px;
+    display: flex;
+    /* important */
+    align-items: stretch;
+}
+.intro h2{
+    text-align: left;
+    color: #4c4d5f;
+}
+.intro p{
+    color: #4c4d5f;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.etc{
+    background-color: white;
+    float: left;
+    width: 32.3%;
+    padding: 10px 50px;
+    margin-right: 10px;
+    outline: 1px solid grey;
+    border-radius: 8px;
+    min-height: 100%;
+    box-shadow: 5px 10px 18px #888888;
+}
+.image{
+    border-bottom: 1px solid #00b289;
+}
+.image img{
+    object-fit: contain;
+    height: 80px;
+    width: 250px;
+}
+.lists{margin-top: 20px;}
+
+.lists ul li{
+    padding: 10px 0px;
+    list-style: none;
+    color: #4c4d5f;
+}
+.lists ul li::marker{
+    content: "✔️";
+}
+.button1{
+    position: relative;
+    top: 50px;
+}
+
+.button{
+    margin: 70px 58px 30px;
+}
+
+.button a{
+    padding: 20px 80px;
+    text-decoration: none;
+    background-color: #00b289;
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    border-radius: 12px;
+    opacity: 0.8;
+}
+.button a:hover{
+    opacity: 1;
+}
+.add-ons{
+    margin-top: 120px;
+    padding: 0px 100px;
+}
+.add-ons .header{
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+    font-size: 36px;
+    color: #0D0D0D;
+    margin-bottom: 25px;
+}
+.diff{
+    background-color: #FBFAF2;
+    box-shadow: 5px 10px 18px #888888;
+    margin-bottom: 15px;
+    padding: 25px 30px;
+    border-radius: 6px;
+}
+.diff .per_month{
+    text-align: right;
+}
+.diff h2{
+    text-align: right;
+    margin-top: -38px;
+    font-size: 34px;
+    color: #242124;
+}
+.diff a{
+    position: relative;
+    text-decoration: none;
+    color: #00b289;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.diff a ion-icon{
+    position: absolute;
+    top: 2px;
+}
+.diff a:hover ion-icon{
+    right: -22px;
+    transition: 1s;
+}
+.yeet{
+    display: flex;
+}
+.grow{
+    position: relative;
+    outline: 1px solid #BCD2E8;
+    margin: 120px auto;
+    width: 60%;
+    padding: 50px 60px;
+    background-color: #BCD2E8;
+    font-family: 'Cormorant SC', serif;
+    border-radius: 6px;
+}
+.grow h2{
+    text-align: left;
+    font-size: 38px;
+    color: #222222;
+}
+.grow span{
+    color: #00b289;
+}
+.grow a{
+    position: absolute;
+    padding: 20px 35px;
+    background-color: #00b289;
+    color: white;
+    text-decoration: none;
+    right: 50px;
+    top: 70px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+.grow a:hover{
+    opacity: 1;
+}
+.f-a-q{
+    text-align: center;
+    padding: 12px 150px;
+    margin-bottom: 150px;
+}
+.f-a-q h2{
+    color: #00b289;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+.expando{
+    display: none;
+}
+.expando:target{
+    display: block
+}
+.f-a-q ul{
+    list-style: none;
+}
+.f-a-q ul li a{
+    text-decoration: none;
+    color:#333333;
+    font-size: 22px;
+    font-weight: 700;
+}
+.f-a-q ul{
+    margin-bottom: 15px;
+    width: 1300px;
+    text-align: left;
+}
+.f-a-q ul li a:hover{
+    color: #00b289;
+}
+.expando li{
+    font-weight: 500;
+    font-size: 18px;
+    color: #4c4d5f;
+    line-height: 30px;
+}
+.f-a-q ul li ion-icon{
+    position: absolute;
+    font-size: 25px;
+    right: 10px;
+}
+
+.foot{
+    padding: 20px 180px;
+    height: 1000px;
+}
+.foot_head{
+    float: left;
+    width: 33.3%;
+}
+.foot_head h3{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+.foot_head ul{
+    list-style: none;
+}
+.foot_head ul li{
+    margin-bottom: 12px;
+}
+.foot_head ul li a{
+    text-decoration: none;
+    color:#222222;
+}
+.foot_head ul li a:hover{
+    color: #4c4d5f;
+}
+.col2{
+    margin-top: 55px;
+}
+.second_col h3{
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+.drip{
+    display: none;
+}
+.drip:target{
+    display: block;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.second_col ul li a ion-icon{
+    position: absolute;
+    font-size: 20px;
+}
+.col3{
+    margin-top: 55px;
+}
+.col4{
+    margin-top: 55px;
+}
